@@ -10,12 +10,25 @@ class Person {
     }
 }
 
-let personA = new Person("Sally");
+class Friend extends Person {
+    yearsKnown: number;
 
-// Prints "Hi, I am Sally!"
-personA.introduceSelf();
+    constructor(name: string, yearsKnown: number)
+    {
+        super(name);
+        this.yearsKnown = yearsKnown;
+    }
 
-personA.name = "Mindy";
+    timeKnown()
+    {
+        console.log("We have been friends for " + this.yearsKnown + " years.")
+    }
+}
 
-// Prints "Hi, I am Mindy!"
-personA.introduceSelf();
+let friendA = new Friend("Jacob", 6);
+
+// Prints: Hi, I am Jacob!
+friendA.introduceSelf();
+
+// Prints: We have been friends for 6 years.
+friendA.timeKnown();
