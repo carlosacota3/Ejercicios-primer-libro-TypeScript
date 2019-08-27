@@ -1,5 +1,6 @@
-function removeChar(theString: string, theChar: string): string
+function removeIt<T>(theInput: T, theIt: string): T
 {
-    let theRegex = new RegExp(theChar, "gi");
-    return theString.replace(theRegex, '');
+    let theRegex = new RegExp(theIt, "gi");
+    return theInput.replace(theRegex, '');
 }
+    
