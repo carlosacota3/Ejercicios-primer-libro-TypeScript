@@ -32,4 +32,5 @@ class Friend extends Person {
 let friendA = new Friend("William", 19, 8);
 // Prints: We have been friends since I was 11 years old.
 friendA.friendSince();
-    
+
+let personA = new Person("Amanda", 22);

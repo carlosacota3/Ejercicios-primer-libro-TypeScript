@@ -40,3 +40,4 @@ var Friend = /** @class */ (function (_super) {
 var friendA = new Friend("William", 19, 8);
 // Prints: We have been friends since I was 11 years old.
 friendA.friendSince();
+var personA = new Person("Amanda", 22);
